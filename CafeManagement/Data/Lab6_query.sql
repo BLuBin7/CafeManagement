@@ -1,0 +1,31 @@
+USE master;
+GO
+ALTER DATABASE CafeDB SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+GO
+CREATE Database CafeDB;
+USE CafeDB;
+
+CREATE TABLE Customer (
+    CustomerID NVARCHAR(50) PRIMARY KEY,
+    CustomerName NVARCHAR(100),
+    Birthday DATETIME,
+    Sex NVARCHAR(10),
+);
+
+CREATE TABLE Roles (
+    RoleID INT PRIMARY KEY,
+    RoleName NVARCHAR(50) NOT NULL
+);
+
+CREATE TABLE [User](
+    UserName NVARCHAR(50) PRIMARY KEY,
+    Password NVARCHAR(50),
+    CustomerID NVARCHAR(50) FOREIGN KEY REFERENCES Customer(CustomerID),
+	RoleID INT FOREIGN KEY REFERENCES Roles(RoleID)
+);
+
+INSERT INTO Roles (RoleID, RoleName) VALUES ('1','ADMIN')
+INSERT INTO Roles (RoleID, RoleName) VALUES ('2','USER')
+
+
+

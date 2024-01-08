@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CafeDB">
+  <DataContextMoniker Name="/CafeDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fc037aab-de03-4f15-8d5e-6c7bc2ba7955" absoluteBounds="4.5, 2.25, 2, 1.8109222229321795">
+      <DataClassMoniker Name="/CafeDBDataContext/Cafe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c38dc359-5d58-4b2e-bbbb-66ecc663568e" absoluteBounds="4.515, 2.71, 1.9700000000000002, 1.2509222229321797" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

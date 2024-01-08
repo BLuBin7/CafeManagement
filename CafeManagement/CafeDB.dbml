@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CafeDB" Class="CafeDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=BLUBIN\BLUBIN;Initial Catalog=CafeDB;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="CafeManagement.Properties.Settings" SettingsPropertyName="CafeDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Cafe" Member="Cafes">
+    <Type Name="Cafe">
+      <Column Name="CafeID" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CafeName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CafeType" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="OpeningDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PriceRange" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
